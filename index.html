@@ -1,0 +1,195 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      background-color: #fc7300;
+      font-family: 'Verdana', sans-serif;
+      text-align: center;
+      color: #333;
+      font-size: 1.2em;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #004080;
+    }
+
+    .info-section {
+      margin-top: 20px;
+    }
+
+    .info-section p {
+      font-size: 1.5em;
+    }
+
+    .bold-text {
+      font-weight: bold;
+    }
+
+    .italic-text {
+      font-style: italic;
+    }
+
+    .underline-text {
+      text-decoration: underline;
+    }
+
+    .lists {
+      display: inline-block;
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .ordered, .unordered {
+      margin-left: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 1.3em;
+    }
+
+    img {
+      width: 150px;
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 560px;
+      height: 315px;
+      margin-top: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <nav>
+    <h1>Page Navigation</h1>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#hobbies">Hobbies/Likes</a></li>
+    </ul>
+  </nav>
+
+  <img src="https://assets.onecompiler.app/438vw7zw9/438vudrq7/logo-big.png" alt="ECU Logo">
+
+  
+  <section id="about-me">
+    <h1>About Me</h1>
+    <img src="https://iibawards-prod.s3.amazonaws.com/projects/images/000/002/333/large.png?1505504208" alt="Image related to my major" />
+    <div class="info-section">
+      <p class="bold-text">My name is Nathan Franco.</p>
+      <p class="italic-text">My major is Computer Science.</p>
+      <p class="underline-text">I am a Junior.</p>
+    </div>
+  </section>
+
+  
+  <section id="classes">
+    <h2>CMPSC 3323-01 - Internet Programming</h2>
+    <p>This class goes over technical issues concerning the internet and programming on the internet, including hypertext document creation and delivery, client-server systems, graphics, server interface programs, and appropriate languages. I enjoy learning ways to make websites in specific more appealing.</p>
+
+    <h2>MATH 2613-01 - Calc for Bus, Life & Soc Sci</h2>
+    <p>This course is about the informal study of differentiation and integration of polynomial, exponential and logarithmic functions with applications to business, life and social sciences.</p>
+
+    <h2>CPSMA 2103-01 - Data Structures</h2>
+    <p>In this class, we go over basic concepts of data structures, stacks, queues, trees, tables, hashing, lists, strings, arrays, files, and applications to various areas of computer science.</p>
+
+    <h2>CMPSC 4223-01 - UNIX System Administration</h2>
+    <p>This class covers administration of unix timesharing systems, including spooling, installation, maintenance, and intercomputer communications.</p>
+  </section>
+
+ 
+  <section id="hobbies">
+    <h2>Some of my hobbies include:</h2>
+    <ul class="unordered">
+      <li>Gym</li>
+      <li>Video games</li>
+      <li>Fishing</li>
+    </ul>
+
+   
+    <iframe src="https://www.youtube.com/embed/ETSl8gWsFZ0?si=6Kb13hgy9WW7wuzO" title="One Pound Fish"></iframe> <!-- Replace with any video or content -->
+  </section>
+
+  <footer>
+    <p><a href="https://www.ecok.edu" target="_blank">ECU Homepage</a></p>
+  </footer>
+  <section id="interactive-grid">
+  <h2>Interactive Section</h2>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h3>Calculator</h3>
+      <form id="calcForm">
+        <input type="number" id="num1" placeholder="First Number" required>
+        <input type="number" id="num2" placeholder="Second Number" required><br>
+        <label><input type="radio" name="operation" value="add" required>+</label>
+        <label><input type="radio" name="operation" value="subtract">-</label>
+        <label><input type="radio" name="operation" value="multiply">*</label>
+        <label><input type="radio" name="operation" value="divide">/</label><br>
+        <button type="submit">Calculate</button>
+      </form>
+    </div>
+
+    <div class="grid-item">
+      <h3>Factorial</h3>
+      <form id="factorialForm">
+        <input type="number" id="factorialInput" placeholder="Enter an Integer" required><br>
+        <button type="submit">Compute Factorial</button>
+      </form>
+    </div>
+
+    <div class="grid-item">
+      <h3>Fibonacci</h3>
+      <form id="fibonacciForm">
+        <input type="number" id="fibonacciInput" placeholder="Nth Fibonacci Number" required><br>
+        <button type="submit">Find Fibonacci</button>
+      </form>
+    </div>
+
+    <div class="grid-item">
+      <h3>Min, Max, Range</h3>
+      <form id="minMaxForm">
+        <input type="number" id="numA" placeholder="Number 1" required>
+        <input type="number" id="numB" placeholder="Number 2" required>
+        <input type="number" id="numC" placeholder="Number 3" required><br>
+        <button type="submit">Compute</button>
+      </form>
+    </div>
+
+    <div class="grid-item-full">
+      <h3>Mailing List Signup</h3>
+      <form id="mailingListForm">
+        <label>First Name: <input type="text" id="firstName" placeholder="John" required></label><br>
+        <label>Last Name: <input type="text" id="lastName" placeholder="Doe" required></label><br>
+        <label>Email: <input type="email" id="email" placeholder="john@example.com" required></label><br>
+        <label>ZIP Code: <input type="text" id="zip" placeholder="12345" required></label><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <div id="signupList"></div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
